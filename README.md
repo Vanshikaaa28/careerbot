@@ -196,8 +196,8 @@ Python Programming
 
 ## Author
 
-Your Name: Vanshika Jaiswal
-3rd Year B.Tech Student — CSE with specialization in AI&ML
+* Your Name: Vanshika Jaiswal
+* 3rd Year B.Tech Student — CSE with specialization in AI&ML
 
 ---
 
