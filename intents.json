@@ -1,0 +1,158 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Is anyone there?",
+        "Hi there",
+        "Hello bot",
+        "Hey assistant"
+      ],
+      "responses": [
+        "Hello! How can I assist you with placements or interviews today?",
+        "Hi there! Ask me anything about internships, resumes, or interviews.",
+        "Welcome! I'm here to help with career guidance."
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Talk to you later",
+        "Catch you later"
+      ],
+      "responses": [
+        "Good luck with your career journey!",
+        "See you soon. Keep learning!",
+        "Bye! Feel free to return anytime."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Appreciate it",
+        "Thanks a lot"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Happy to help!",
+        "Anytime!"
+      ]
+    },
+
+    {
+      "tag": "resume_tips",
+      "patterns": [
+        "How do I improve my resume",
+        "Resume tips",
+        "What should I add to my resume",
+        "How to write a good resume",
+        "How to make my resume strong",
+        "How to build a resume",
+        "What should be included in resume"
+      ],
+      "responses": [
+        "Include relevant projects, internships, and measurable achievements.",
+        "Keep your resume concise and highlight technical skills.",
+        "Tailor your resume to the job description."
+      ]
+    },
+
+    {
+      "tag": "interview_preparation",
+      "patterns": [
+        "How do I prepare for interviews",
+        "Interview tips",
+        "How to crack technical interview",
+        "How to practice coding",
+        "How to prepare for placement interviews",
+        "What should I study for interviews",
+        "Interview preparation strategy"
+      ],
+      "responses": [
+        "Practice data structures and algorithms regularly.",
+        "Review your projects and be ready to explain them clearly.",
+        "Prepare common interview questions and practice mock interviews."
+      ]
+    },
+
+    {
+      "tag": "internship_search",
+      "patterns": [
+        "How to find internships",
+        "Where can I apply for internships",
+        "Internship websites",
+        "How to get internship",
+        "Best way to get internship",
+        "How to apply for internship",
+        "Where to search internship"
+      ],
+      "responses": [
+        "You can apply through LinkedIn, company websites, and internship portals.",
+        "Build projects and maintain an active GitHub profile.",
+        "Network with professionals and apply early."
+      ]
+    },
+
+    {
+      "tag": "skills_required",
+      "patterns": [
+        "What skills are required for placements",
+        "Important skills for software jobs",
+        "What should I learn for AI jobs",
+        "Skills needed for software engineer",
+        "Required skills for internships",
+        "Most important programming skills"
+      ],
+      "responses": [
+        "Strong Python, data structures, and problem-solving skills are essential.",
+        "Focus on machine learning, projects, and communication skills.",
+        "Practice coding regularly and build real-world projects."
+      ]
+    },
+
+    {
+      "tag": "salary_expectation",
+      "patterns": [
+        "What salary can I expect",
+        "Average salary for freshers",
+        "Starting salary for software engineer",
+        "Salary after graduation",
+        "Entry level salary in IT"
+      ],
+      "responses": [
+        "Entry-level software engineers typically earn competitive starting salaries depending on skills and company.",
+        "Salary depends on your technical skills, projects, and interview performance."
+      ]
+    },
+
+    {
+      "tag": "project_suggestions",
+      "patterns": [
+        "What projects should I build",
+        "Project ideas for students",
+        "Good projects for resume",
+        "AI project suggestions",
+        "Machine learning project ideas",
+        "Best coding projects"
+      ],
+      "responses": [
+        "Build projects like chatbots, recommendation systems, or web applications.",
+        "Focus on projects that solve real-world problems.",
+        "Choose projects that demonstrate your technical skills."
+      ]
+    }
+  ]
+}
