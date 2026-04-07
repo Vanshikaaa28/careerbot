@@ -1,83 +1,212 @@
-# Implementation of a Contextual Chatbot in PyTorch.  
-Simple chatbot implementation with PyTorch. 
+# CareerBot: AI-Powered Placement Guidance Chatbot using PyTorch
 
-- The implementation should be easy to follow for beginners and provide a basic understanding of chatbots.
-- The implementation is straightforward with a Feed Forward Neural net with 2 hidden layers.
-- Customization for your own use case is super easy. Just modify `intents.json` with possible patterns and responses and re-run the training (see below for more info).
+CareerBot is a contextual chatbot implementation using PyTorch designed to assist students with placement preparation, interview guidance, resume tips, and general career-related queries.
 
-The approach is inspired by this article and ported to PyTorch: [https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077](https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077).
+* The implementation is simple and easy to understand for beginners.
+* The chatbot uses a Feed Forward Neural Network with hidden layers for intent classification.
+* The dataset is customizable for different career and placement-related use cases.
+* Users can modify `intents.json` to extend the chatbot’s knowledge and retrain the model.
 
-## Watch the Tutorial
-[![Alt text](https://img.youtube.com/vi/RpWeNzfSUHw/hqdefault.jpg)](https://www.youtube.com/watch?v=RpWeNzfSUHw&list=PLqnslRFeH2UrFW4AUgn-eY37qOAWQpJyg)
+This project demonstrates the practical use of Natural Language Processing (NLP), deep learning, and conversational AI using Python and PyTorch.
+
+---
+
+## Features
+
+* Intent classification using a neural network
+* NLP preprocessing using tokenization and stemming
+* Bag-of-Words text vectorization
+* Custom placement and interview guidance dataset
+* Confidence-based response system
+* Easy dataset customization
+* Beginner-friendly implementation
+
+---
+
+## Project Structure
+
+careerbot-placement-chatbot/
+
+train.py — Script to train the neural network
+placement_chatbot.py — Main chatbot application
+model.py — Neural network model definition
+nltk_utils.py — Text preprocessing utilities
+intents.json — Dataset containing patterns and responses
+data.pth — Trained model file
+README.md — Project documentation
+
+---
 
 ## Installation
 
-### Create an environment
-Whatever you prefer (e.g. `conda` or `venv`)
+### Create a Virtual Environment
+
+You can use `venv` or `conda`.
+
 ```console
-mkdir myproject
-$ cd myproject
-$ python3 -m venv venv
+mkdir careerbot
+cd careerbot
+python -m venv venv
 ```
 
-### Activate it
-Mac / Linux:
-```console
-. venv/bin/activate
-```
+### Activate the Environment
+
 Windows:
+
 ```console
 venv\Scripts\activate
 ```
-### Install PyTorch and dependencies
 
-For Installation of PyTorch see [official website](https://pytorch.org/).
+Mac / Linux:
 
-You also need `nltk`:
- ```console
+```console
+. venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
+Install required libraries:
+
+```console
+pip install torch
 pip install nltk
- ```
+pip install numpy
+```
 
-If you get an error during the first run, you also need to install `nltk.tokenize.punkt`:
-Run this once in your terminal:
- ```console
-$ python
+If you encounter an error during the first run, install the tokenizer:
+
+```console
+python
 >>> import nltk
 >>> nltk.download('punkt')
 ```
 
+---
+
 ## Usage
-Run
+
+### Step 1: Train the Model
+
+Run:
+
 ```console
 python train.py
 ```
-This will dump `data.pth` file. And then run
+
+This will generate:
+
 ```console
-python chat.py
+data.pth
 ```
-## Customize
-Have a look at [intents.json](intents.json). You can customize it according to your own use case. Just define a new `tag`, possible `patterns`, and possible `responses` for the chat bot. You have to re-run the training whenever this file is modified.
+
+---
+
+### Step 2: Run the Chatbot
+
+```console
+python placement_chatbot.py
+```
+
+Example interaction:
+
+You: What companies visit campus?
+CareerBot: Top companies visiting campus include TCS, Infosys, and Accenture.
+
+You: How do I prepare for interviews?
+CareerBot: Practice coding problems, review core subjects, and prepare HR questions.
+
+You: quit
+CareerBot: Goodbye! Best of luck with your career.
+
+---
+
+## Customize the Chatbot
+
+You can modify the chatbot behavior by editing:
+
+```console
+intents.json
+```
+
+Add:
+
+* New tags
+* User input patterns
+* Bot responses
+
+Example:
+
 ```console
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
-      ],
-      "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
-      ]
-    },
-    ...
+  "tag": "interview_preparation",
+  "patterns": [
+    "How should I prepare for interviews?",
+    "Interview tips",
+    "How to crack interviews"
+  ],
+  "responses": [
+    "Practice coding regularly and revise core subjects.",
+    "Prepare common HR questions and mock interviews."
   ]
 }
 ```
+
+After modifying the dataset, retrain the model:
+
+```console
+python train.py
+```
+
+---
+
+## Technologies Used
+
+Python
+PyTorch
+Natural Language Processing (NLP)
+NLTK
+NumPy
+JSON
+
+---
+
+## Skills Demonstrated
+
+Machine Learning
+Deep Learning
+Natural Language Processing
+PyTorch Model Development
+Text Preprocessing
+Chatbot Development
+Python Programming
+
+---
+
+## Future Improvements
+
+* Add web interface using Flask or Streamlit
+* Deploy chatbot to cloud platform
+* Add voice input support
+* Improve model accuracy with larger dataset
+* Use advanced NLP models (e.g., transformers)
+
+---
+
+## Author
+
+Your Name: Vanshika Jaiswal
+3rd Year B.Tech Student — CSE with specialization in AI&ML
+
+---
+
+## Acknowledgement
+
+This project is inspired by an open-source PyTorch chatbot implementation and has been customized with a new dataset and functionality for placement guidance and career support.
+
+---
+
+## License
+
+This project is intended for educational and demonstration purposes.
