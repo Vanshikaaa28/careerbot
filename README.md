@@ -199,7 +199,7 @@ Python Programming
 **Vanshika Jaiswal**
 3rd Year B.Tech Student — CSE (AI & ML)
 
-* 📄 Resume: https://drive.google.com/file/d/1tAGPmbdzw5Czp2w49jSamslzd_JHOFpi/view
+* 📄 Resume: [https://drive.google.com/file/d/1tAGPmbdzw5Czp2w49jSamslzd_JHOFpi/view](https://drive.google.com/file/d/19eXdpldPJjVSddwX_yz6HiXOZJb3Fk1H/view?usp=sharing)
 * 🔗 LinkedIn: https://www.linkedin.com/in/vanshikaaa/
 * 💻 GitHub: https://github.com/Vanshikaaa28
 
