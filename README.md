@@ -196,8 +196,12 @@ Python Programming
 
 ## Author
 
-* Your Name: Vanshika Jaiswal
-* 3rd Year B.Tech Student — CSE with specialization in AI&ML
+**Vanshika Jaiswal**
+3rd Year B.Tech Student — CSE (AI & ML)
+
+* 📄 Resume: https://drive.google.com/file/d/1tAGPmbdzw5Czp2w49jSamslzd_JHOFpi/view
+* 🔗 LinkedIn: https://www.linkedin.com/in/vanshikaaa/
+* 💻 GitHub: https://github.com/Vanshikaaa28
 
 ---
 
